@@ -28,6 +28,7 @@ string solution(vector<int> numbers, string hand) {
             else if(l_pos == 7) l_dis = 3;
             else if(l_pos == 8) l_dis = 2;
             else if(l_pos == 0) l_dis = 3;
+            else if(l_pos == 10) l_dis = 4;
             
             if(r_pos == 3) r_dis = 1;
             else if(r_pos == 6) r_dis = 2;
@@ -36,6 +37,7 @@ string solution(vector<int> numbers, string hand) {
             else if(r_pos == 5) r_dis = 1;
             else if(r_pos == 8) r_dis = 2;
             else if(r_pos == 0) r_dis = 3;
+            else if(r_pos == 11) r_dis = 4;
             
             
             if(l_dis > r_dis) {answer.append("R"); r_pos = *iter;}
@@ -53,6 +55,7 @@ string solution(vector<int> numbers, string hand) {
             else if(l_pos == 5) l_dis = 0;
             else if(l_pos == 8) l_dis = 1;
             else if(l_pos == 0) l_dis = 2;
+            else if(l_pos == 10) l_dis = 3;
             
             if(r_pos == 3) r_dis = 2;
             else if(r_pos == 6) r_dis = 1;
@@ -61,6 +64,7 @@ string solution(vector<int> numbers, string hand) {
             else if(r_pos == 5) r_dis = 0;
             else if(r_pos == 8) r_dis = 2;
             else if(r_pos == 0) r_dis = 3;
+            else if(r_pos == 11) r_dis = 3;
             
             if(l_dis > r_dis) {answer.append("R"); r_pos = *iter;}
             else if(l_dis < r_dis) {answer.append("L"); l_pos = *iter;}
@@ -77,6 +81,7 @@ string solution(vector<int> numbers, string hand) {
             else if(l_pos == 5) l_dis = 1;
             else if(l_pos == 8) l_dis = 0;
             else if(l_pos == 0) l_dis = 1;
+            else if(l_pos == 10) l_dis = 2;
             
             if(r_pos == 3) r_dis = 3;
             else if(r_pos == 6) r_dis = 2;
@@ -85,6 +90,7 @@ string solution(vector<int> numbers, string hand) {
             else if(r_pos == 5) r_dis = 1;
             else if(r_pos == 8) r_dis = 0;
             else if(r_pos == 0) r_dis = 1;
+            else if(r_pos == 11) r_dis = 2;
             
             if(l_dis > r_dis) {answer.append("R"); r_pos = *iter;}
             else if(l_dis < r_dis) {answer.append("L"); l_pos = *iter;}
@@ -101,6 +107,7 @@ string solution(vector<int> numbers, string hand) {
             else if(l_pos == 5) l_dis = 2;
             else if(l_pos == 8) l_dis = 1;
             else if(l_pos == 0) l_dis = 0;
+            else if(l_pos == 10) l_dis = 1;
             
             if(r_pos == 3) r_dis = 4;
             else if(r_pos == 6) r_dis = 3;
@@ -109,6 +116,7 @@ string solution(vector<int> numbers, string hand) {
             else if(r_pos == 5) r_dis = 2;
             else if(r_pos == 8) r_dis = 1;
             else if(r_pos == 0) r_dis = 0;
+            else if(r_pos == 11) r_dis = 1;
             
             if(l_dis > r_dis) {answer.append("R"); r_pos = *iter;}
             else if(l_dis < r_dis) {answer.append("L"); l_pos = *iter;}
